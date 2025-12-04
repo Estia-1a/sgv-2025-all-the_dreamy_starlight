@@ -1,14 +1,22 @@
 /* Logo positioning for mobile (<= 767px) */
 .logo {
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 16px;
+	left: 16px;
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+    max-height: 100%;
 	font-weight: 700;
-	font-size: 0.95rem;
+	font-size: 1.1rem;
 	color: #000;
 	background: transparent;
-	padding: 3px 6px;
-	border-radius: 3px;
+	padding: 4px 8px;
+	border-radius: 4px;
 	z-index: 1000;
+    border-color: #000;
+    border-radius: 45px;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
