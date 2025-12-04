@@ -54,6 +54,19 @@
 	z-index: 500;
 }
 
+.footer {
+    text-align: left;
+    padding: 5px 0;
+    background-color: #F5DEB3;
+    color: #000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    z-index: 500;
+}
+
 /* Ensure the page content doesn't overlap the logo if needed 
 body {
 	 optional: adjust if your content is hidden behind the fixed logo 
