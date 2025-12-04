@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)"> 
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
+    <title>19's</title> 
+</head>
+<background class="background" src="media/pictures/Background_bk.png"></background>
+
+<body>  
+    <background class="background"></background>
+    <img class="logo" src="media/pictures/logo.png"></img>
+    <barres class="barres"></barres>
+    <div class="logo" src="media/pictures/logo.png"></div>
+    <h1 class="title">Bienvenue sur le site de streaming 19's</h1>
+    <h2 class="subtitle">Pour les plaisirs de notre jeunesse</h2>
+</body>
+<footer class="footer">
+    <p>© 2024 19's. Tous droits réservés.</p>
+</footer>
+</html>
