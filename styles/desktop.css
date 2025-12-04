@@ -24,12 +24,12 @@
     margin-top: 80px; /* Adjust margin to avoid overlap with fixed logo */
     font-size: 2.5rem;
     text-align: center;
-    color: #ffef11;
+    color: #000000;
 }
 
 .subtitle {
     font-size: 1.8rem;
-    color: #ffef11;
+    color: #000000;
     margin-top: 40px;
     text-align: center;
 }
