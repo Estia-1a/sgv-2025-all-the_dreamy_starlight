@@ -1,0 +1,14 @@
+/* Logo positioning for mobile (<= 767px) */
+.logo {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	font-weight: 700;
+	font-size: 0.95rem;
+	color: #000;
+	background: transparent;
+	padding: 3px 6px;
+	border-radius: 3px;
+	z-index: 1000;
+}
+
