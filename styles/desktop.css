@@ -36,11 +36,11 @@
 
 .background {
     background-color: #000;
-    background-size: cover;
+    /*background-size: cover;*/
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
     width: 100%;
+    height: 100%;
 }
 .barre_principale {
 	position: fixed;
