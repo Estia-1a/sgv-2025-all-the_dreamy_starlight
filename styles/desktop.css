@@ -1,0 +1,20 @@
+/* Logo positioning for desktop (>= 768px) */
+.logo {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+	font-weight: 700;
+	font-size: 1.1rem;
+	color: #000;
+	background: transparent;
+	padding: 4px 8px;
+	border-radius: 4px;
+	z-index: 1000;
+}
+
+/* Ensure the page content doesn't overlap the logo if needed 
+body {
+	 optional: adjust if your content is hidden behind the fixed logo 
+}
+ */
+
