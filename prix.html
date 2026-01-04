@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="19'S - Plateforme de streaming et vente de films cultes d'avant l'an 2000">
-    <title>19'S - Films vintage en streaming et livraison</title>
+    <meta name="description" content="19'S - Films cultes au meilleur prix">
+    <title>19'S - Films au meilleur prix</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- ========================================
-         VERSION PC (Visible par défaut sur grand écran)
+         VERSION PC (IDENTIQUE À index.html)
     ======================================== -->
     <div class="pc_version">
         
@@ -26,7 +26,7 @@
                 
                 <!-- Barre de recherche -->
                 <div class="pc_search_bar">
-                    <input type="search" id="pc_search_input" name="search" placeholder="Rechercher un film, une série, un artiste..." aria-label="Rechercher du contenu">
+                    <input type="search" id="pc_search_input_prix" name="search" placeholder="Rechercher un film, une série, un artiste..." aria-label="Rechercher du contenu">
                 </div>
                 
                 <!-- Icônes Profil et Panier -->
@@ -41,7 +41,7 @@
             </div>
         </header>
 
-        <!-- BARRE DE FILTRES PILLS (SCROLL HORIZONTAL) -->
+        <!-- BARRE DE FILTRES PILLS -->
         <section class="pc_filters_bar" aria-label="Filtres par genre et époque">
             <div class="pc_filters_container">
                 <button class="pc_filter_pill pc_filter_active">Action</button>
@@ -55,17 +55,16 @@
             </div>
         </section>
 
-        <!-- ZONE CENTRALE - 3 COLONNES À SCROLL INDÉPENDANT -->
+        <!-- ZONE CENTRALE - 3 COLONNES IDENTIQUES -->
         <div class="pc_main_content">
             
-            <!-- COLONNE 1 : RECOMMANDATIONS (33%) -->
-            <section class="pc_column" aria-label="Films recommandés">
+            <!-- COLONNE 1 : RECOMMANDATIONS -->
+            <section class="pc_column">
                 <h2 class="pc_column_title">Recommandations</h2>
                 <p class="pc_personalized_text">Basé sur votre profil</p>
                 
                 <div class="pc_films_list">
                     
-                    <!-- Film 1 : Matrix -->
                     <article class="pc_film_card">
                         <img src="img/matrix.jpg" alt="Affiche du film Matrix" class="pc_film_image">
                         <div class="pc_film_info">
@@ -77,7 +76,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 2 : Pulp Fiction -->
                     <article class="pc_film_card">
                         <img src="img/pulp_fiction.jpg" alt="Affiche du film Pulp Fiction" class="pc_film_image">
                         <div class="pc_film_info">
@@ -89,7 +87,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 3 : Fight Club -->
                     <article class="pc_film_card">
                         <img src="img/fight_club.jpg" alt="Affiche du film Fight Club" class="pc_film_image">
                         <div class="pc_film_info">
@@ -101,7 +98,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 4 : Le Cinquième Élément -->
                     <article class="pc_film_card">
                         <img src="img/cinquieme_element.jpg" alt="Affiche du film Le Cinquième Élément" class="pc_film_image">
                         <div class="pc_film_info">
@@ -113,7 +109,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 5 : Blade Runner -->
                     <article class="pc_film_card">
                         <img src="img/blade_runner.jpg" alt="Affiche du film Blade Runner" class="pc_film_image">
                         <div class="pc_film_info">
@@ -125,7 +120,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 6 : Seven -->
                     <article class="pc_film_card">
                         <img src="img/seven.jpg" alt="Affiche du film Seven" class="pc_film_image">
                         <div class="pc_film_info">
@@ -137,7 +131,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 7 : Forrest Gump -->
                     <article class="pc_film_card">
                         <img src="img/forrest_gump.jpg" alt="Affiche du film Forrest Gump" class="pc_film_image">
                         <div class="pc_film_info">
@@ -149,7 +142,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 8 : Usual Suspects -->
                     <article class="pc_film_card">
                         <img src="img/usual_suspects.jpg" alt="Affiche du film Usual Suspects" class="pc_film_image">
                         <div class="pc_film_info">
@@ -164,13 +156,12 @@
                 </div>
             </section>
 
-            <!-- COLONNE 2 : PLUS CONSULTÉS (33%) -->
-            <section class="pc_column" aria-label="Films les plus consultés">
+            <!-- COLONNE 2 : PLUS CONSULTÉS -->
+            <section class="pc_column">
                 <h2 class="pc_column_title">Plus consultés</h2>
                 
                 <div class="pc_films_list">
                     
-                    <!-- Film 1 : Titanic -->
                     <article class="pc_film_card">
                         <img src="img/titanic.jpg" alt="Affiche du film Titanic" class="pc_film_image">
                         <div class="pc_film_info">
@@ -182,7 +173,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 2 : Jurassic Park -->
                     <article class="pc_film_card">
                         <img src="img/jurassic_park.jpg" alt="Affiche du film Jurassic Park" class="pc_film_image">
                         <div class="pc_film_info">
@@ -194,7 +184,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 3 : Star Wars Episode IV -->
                     <article class="pc_film_card">
                         <img src="img/star_wars_iv.jpg" alt="Affiche du film Star Wars Episode IV" class="pc_film_image">
                         <div class="pc_film_info">
@@ -206,7 +195,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 4 : Le Parrain -->
                     <article class="pc_film_card">
                         <img src="img/le_parrain.jpg" alt="Affiche du film Le Parrain" class="pc_film_image">
                         <div class="pc_film_info">
@@ -218,7 +206,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 5 : Retour vers le Futur -->
                     <article class="pc_film_card">
                         <img src="img/retour_futur.jpg" alt="Affiche du film Retour vers le Futur" class="pc_film_image">
                         <div class="pc_film_info">
@@ -230,7 +217,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 6 : Alien -->
                     <article class="pc_film_card">
                         <img src="img/alien.jpg" alt="Affiche du film Alien" class="pc_film_image">
                         <div class="pc_film_info">
@@ -242,7 +228,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 7 : Gladiator -->
                     <article class="pc_film_card">
                         <img src="img/gladiator.jpg" alt="Affiche du film Gladiator" class="pc_film_image">
                         <div class="pc_film_info">
@@ -254,7 +239,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 8 : Le Silence des Agneaux -->
                     <article class="pc_film_card">
                         <img src="img/silence_agneaux.jpg" alt="Affiche du film Le Silence des Agneaux" class="pc_film_image">
                         <div class="pc_film_info">
@@ -269,13 +253,12 @@
                 </div>
             </section>
 
-            <!-- COLONNE 3 : MOINS CHER (33%) -->
-            <section class="pc_column" aria-label="Films au meilleur prix">
+            <!-- COLONNE 3 : MOINS CHER -->
+            <section class="pc_column">
                 <h2 class="pc_column_title">Moins cher</h2>
                 
                 <div class="pc_films_list">
                     
-                    <!-- Film 1 : Terminator 2 -->
                     <article class="pc_film_card">
                         <img src="img/terminator2.jpg" alt="Affiche du film Terminator 2" class="pc_film_image">
                         <div class="pc_film_info">
@@ -287,7 +270,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 2 : Shining -->
                     <article class="pc_film_card">
                         <img src="img/shining.jpg" alt="Affiche du film Shining" class="pc_film_image">
                         <div class="pc_film_info">
@@ -299,7 +281,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 3 : Good Will Hunting -->
                     <article class="pc_film_card">
                         <img src="img/good_will_hunting.jpg" alt="Affiche du film Good Will Hunting" class="pc_film_image">
                         <div class="pc_film_info">
@@ -311,7 +292,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 4 : Danse avec les Loups -->
                     <article class="pc_film_card">
                         <img src="img/danse_loups.jpg" alt="Affiche du film Danse avec les Loups" class="pc_film_image">
                         <div class="pc_film_info">
@@ -323,7 +303,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 5 : American Beauty -->
                     <article class="pc_film_card">
                         <img src="img/american_beauty.jpg" alt="Affiche du film American Beauty" class="pc_film_image">
                         <div class="pc_film_info">
@@ -335,7 +314,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 6 : La Liste de Schindler -->
                     <article class="pc_film_card">
                         <img src="img/schindler.jpg" alt="Affiche du film La Liste de Schindler" class="pc_film_image">
                         <div class="pc_film_info">
@@ -347,7 +325,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 7 : Taxi Driver -->
                     <article class="pc_film_card">
                         <img src="img/taxi_driver.jpg" alt="Affiche du film Taxi Driver" class="pc_film_image">
                         <div class="pc_film_info">
@@ -359,7 +336,6 @@
                         </div>
                     </article>
 
-                    <!-- Film 8 : Apocalypse Now -->
                     <article class="pc_film_card">
                         <img src="img/apocalypse_now.jpg" alt="Affiche du film Apocalypse Now" class="pc_film_image">
                         <div class="pc_film_info">
@@ -390,11 +366,10 @@
     </div>
 
     <!-- ========================================
-         VERSION MOBILE (Visible en dessous de 768px)
+         VERSION MOBILE
     ======================================== -->
     <div class="m_version">
         
-        <!-- HEADER FIXE -->
         <header class="m_header">
             <div class="m_header_container">
                 <!-- Logo cliquable -->
@@ -404,12 +379,10 @@
                     </a>
                 </div>
                 
-                <!-- Barre de recherche -->
                 <div class="m_search_bar">
-                    <input type="search" id="m_search_input" name="search" placeholder="Rechercher un film..." aria-label="Rechercher un film">
+                    <input type="search" id="m_search_input_prix" name="search" placeholder="Rechercher un film..." aria-label="Rechercher un film">
                 </div>
                 
-                <!-- Icônes Profil et Panier -->
                 <div class="m_header_icons">
                     <a href="#" class="m_icon_link" aria-label="Mon profil">
                         <span class="m_icon m_icon_user">👤</span>
@@ -421,14 +394,12 @@
             </div>
         </header>
 
-        <!-- NAVIGATION PAR ONGLETS -->
         <nav class="m_tabs_nav">
-            <a href="index.html" class="m_tab_link m_tab_active" aria-current="page">Recommandations</a>
+            <a href="index.html" class="m_tab_link">Recommandations</a>
             <a href="consultes.html" class="m_tab_link">Plus consultés</a>
-            <a href="prix.html" class="m_tab_link">Moins cher</a>
+            <a href="prix.html" class="m_tab_link m_tab_active" aria-current="page">Moins cher</a>
         </nav>
 
-        <!-- BARRE DE FILTRES PILLS (SCROLL HORIZONTAL) -->
         <section class="m_filters_bar" aria-label="Filtres par genre et époque">
             <div class="m_filters_container">
                 <button class="m_filter_pill m_filter_active">Action</button>
@@ -441,107 +412,94 @@
             </div>
         </section>
 
-        <!-- ZONE CENTRALE SCROLLABLE -->
         <div class="m_main_content">
-            
-            <!-- Mention personnalisée -->
-            <p class="m_personalized_text">Basé sur votre profil</p>
 
-            <!-- GRILLE DE 8 FILMS (1 COLONNE) -->
-            <section class="m_films_grid" aria-label="Liste des films recommandés">
+            <section class="m_films_grid" aria-label="Films au meilleur prix">
                 
-                <!-- Film 1 : Matrix -->
                 <article class="m_film_card">
-                    <img src="img/matrix.jpg" alt="Affiche du film Matrix" class="m_film_image">
+                    <img src="img/terminator2.jpg" alt="Affiche du film Terminator 2" class="m_film_image">
                     <div class="m_film_info">
-                        <h2 class="m_film_title">Matrix</h2>
+                        <h2 class="m_film_title">Terminator 2</h2>
                         <p class="m_film_volume">Vol. 1</p>
-                        <p class="m_film_price">12.99€</p>
-                        <p class="m_film_description">Neo découvre que la réalité n'est qu'une simulation créée par des machines. Action révolutionnaire des Wachowski.</p>
+                        <p class="m_film_price">9.99€</p>
+                        <p class="m_film_description">Arnold Schwarzenegger revient en protecteur face au T-1000. Action futuriste révolutionnaire de James Cameron avec effets CGI.</p>
                         <span class="m_badge m_badge_streaming">Streaming</span>
                     </div>
                 </article>
 
-                <!-- Film 2 : Pulp Fiction -->
                 <article class="m_film_card">
-                    <img src="img/pulp_fiction.jpg" alt="Affiche du film Pulp Fiction" class="m_film_image">
+                    <img src="img/shining.jpg" alt="Affiche du film Shining" class="m_film_image">
                     <div class="m_film_info">
-                        <h2 class="m_film_title">Pulp Fiction</h2>
+                        <h2 class="m_film_title">Shining</h2>
                         <p class="m_film_volume">Vol. 1</p>
-                        <p class="m_film_price">14.99€</p>
-                        <p class="m_film_description">Récits croisés de criminels dans le Los Angeles underground. Chef-d'œuvre culte de Tarantino récompensé à Cannes.</p>
+                        <p class="m_film_price">8.99€</p>
+                        <p class="m_film_description">Horreur psychologique de Kubrick dans un hôtel isolé. Jack Nicholson incarne la descente aux enfers d'un gardien devenu fou.</p>
                         <span class="m_badge m_badge_delivery">Livraison</span>
                     </div>
                 </article>
 
-                <!-- Film 3 : Fight Club -->
                 <article class="m_film_card">
-                    <img src="img/fight_club.jpg" alt="Affiche du film Fight Club" class="m_film_image">
+                    <img src="img/good_will_hunting.jpg" alt="Affiche du film Good Will Hunting" class="m_film_image">
                     <div class="m_film_info">
-                        <h2 class="m_film_title">Fight Club</h2>
+                        <h2 class="m_film_title">Good Will Hunting</h2>
                         <p class="m_film_volume">Vol. 1</p>
-                        <p class="m_film_price">11.99€</p>
-                        <p class="m_film_description">Un employé de bureau insomniaque rencontre Tyler Durden et crée un club de combat clandestin. Thriller psychologique intense.</p>
+                        <p class="m_film_price">9.49€</p>
+                        <p class="m_film_description">Jeune génie autodidacte rencontre un psychologue bienveillant. Drame touchant avec Matt Damon et Robin Williams oscarisé.</p>
                         <span class="m_badge m_badge_streaming">Streaming</span>
                     </div>
                 </article>
 
-                <!-- Film 4 : Le Cinquième Élément -->
                 <article class="m_film_card">
-                    <img src="img/cinquieme_element.jpg" alt="Affiche du film Le Cinquième Élément" class="m_film_image">
+                    <img src="img/danse_loups.jpg" alt="Affiche du film Danse avec les Loups" class="m_film_image">
                     <div class="m_film_info">
-                        <h2 class="m_film_title">Le Cinquième Élément</h2>
+                        <h2 class="m_film_title">Danse avec les Loups</h2>
                         <p class="m_film_volume">Vol. 1</p>
-                        <p class="m_film_price">13.99€</p>
-                        <p class="m_film_description">Science-fiction spectaculaire de Luc Besson. Un chauffeur de taxi doit sauver l'univers avec une mystérieuse femme parfaite.</p>
+                        <p class="m_film_price">10.49€</p>
+                        <p class="m_film_description">Western épique réalisé par Kevin Costner. Un lieutenant américain découvre la culture des Sioux dans les grandes plaines.</p>
                         <span class="m_badge m_badge_delivery">Livraison</span>
                     </div>
                 </article>
 
-                <!-- Film 5 : Blade Runner -->
                 <article class="m_film_card">
-                    <img src="img/blade_runner.jpg" alt="Affiche du film Blade Runner" class="m_film_image">
+                    <img src="img/american_beauty.jpg" alt="Affiche du film American Beauty" class="m_film_image">
                     <div class="m_film_info">
-                        <h2 class="m_film_title">Blade Runner</h2>
+                        <h2 class="m_film_title">American Beauty</h2>
                         <p class="m_film_volume">Vol. 1</p>
-                        <p class="m_film_price">15.99€</p>
-                        <p class="m_film_description">Dans un Los Angeles dystopique, un blade runner traque des réplicants. Film culte de science-fiction par Ridley Scott.</p>
+                        <p class="m_film_price">9.99€</p>
+                        <p class="m_film_description">Satire grinçante du rêve américain. Kevin Spacey incarne un père de famille en crise existentielle dans ce drame oscarisé.</p>
                         <span class="m_badge m_badge_streaming">Streaming</span>
                     </div>
                 </article>
 
-                <!-- Film 6 : Seven -->
                 <article class="m_film_card">
-                    <img src="img/seven.jpg" alt="Affiche du film Seven" class="m_film_image">
+                    <img src="img/schindler.jpg" alt="Affiche du film La Liste de Schindler" class="m_film_image">
                     <div class="m_film_info">
-                        <h2 class="m_film_title">Seven</h2>
+                        <h2 class="m_film_title">La Liste de Schindler</h2>
+                        <p class="m_film_volume">Vol. 1</p>
+                        <p class="m_film_price">11.49€</p>
+                        <p class="m_film_description">Chef-d'œuvre historique de Spielberg sur l'Holocauste. Oskar Schindler sauve des centaines de Juifs pendant la Seconde Guerre.</p>
+                        <span class="m_badge m_badge_delivery">Livraison</span>
+                    </div>
+                </article>
+
+                <article class="m_film_card">
+                    <img src="img/taxi_driver.jpg" alt="Affiche du film Taxi Driver" class="m_film_image">
+                    <div class="m_film_info">
+                        <h2 class="m_film_title">Taxi Driver</h2>
+                        <p class="m_film_volume">Vol. 1</p>
+                        <p class="m_film_price">8.49€</p>
+                        <p class="m_film_description">Robert De Niro erre dans un New York sombre et violent. Thriller urbain mythique de Martin Scorsese sur la solitude urbaine.</p>
+                        <span class="m_badge m_badge_streaming">Streaming</span>
+                    </div>
+                </article>
+
+                <article class="m_film_card">
+                    <img src="img/apocalypse_now.jpg" alt="Affiche du film Apocalypse Now" class="m_film_image">
+                    <div class="m_film_info">
+                        <h2 class="m_film_title">Apocalypse Now</h2>
                         <p class="m_film_volume">Vol. 1</p>
                         <p class="m_film_price">10.99€</p>
-                        <p class="m_film_description">Deux détectives traquent un tueur en série qui utilise les sept péchés capitaux. Thriller sombre et haletant de David Fincher.</p>
-                        <span class="m_badge m_badge_delivery">Livraison</span>
-                    </div>
-                </article>
-
-                <!-- Film 7 : Forrest Gump -->
-                <article class="m_film_card">
-                    <img src="img/forrest_gump.jpg" alt="Affiche du film Forrest Gump" class="m_film_image">
-                    <div class="m_film_info">
-                        <h2 class="m_film_title">Forrest Gump</h2>
-                        <p class="m_film_volume">Vol. 1</p>
-                        <p class="m_film_price">12.99€</p>
-                        <p class="m_film_description">L'odyssée touchante d'un homme simple qui traverse l'histoire américaine. Performance légendaire de Tom Hanks.</p>
-                        <span class="m_badge m_badge_streaming">Streaming</span>
-                    </div>
-                </article>
-
-                <!-- Film 8 : Usual Suspects -->
-                <article class="m_film_card">
-                    <img src="img/usual_suspects.jpg" alt="Affiche du film Usual Suspects" class="m_film_image">
-                    <div class="m_film_info">
-                        <h2 class="m_film_title">Usual Suspects</h2>
-                        <p class="m_film_volume">Vol. 1</p>
-                        <p class="m_film_price">11.99€</p>
-                        <p class="m_film_description">Polar complexe autour de cinq criminels et du mystérieux Keyser Söze. Twist final inoubliable et oscarisé.</p>
+                        <p class="m_film_description">Descente hallucinée au cœur de la guerre du Vietnam. Francis Ford Coppola livre une fresque psychédélique et cauchemardesque.</p>
                         <span class="m_badge m_badge_delivery">Livraison</span>
                     </div>
                 </article>

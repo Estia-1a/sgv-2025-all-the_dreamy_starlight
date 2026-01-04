@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="19'S - Votre panier de films vintage">
+    <title>19'S - Mon panier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========================================
+         VERSION PC - PAGE PANIER
+    ======================================== -->
+    <div class="pc_version">
+        
+        <!-- HEADER PC FIXE -->
+        <header class="pc_header">
+            <div class="pc_header_container">
+                <!-- Logo cliquable -->
+                <div class="pc_logo">
+                    <a href="index.html" aria-label="Retour à l'accueil">
+                        <img src="img/logo.jpg" alt="Logo 19'S - Plateforme de streaming vintage">
+                    </a>
+                </div>
+                
+                <!-- Barre de recherche -->
+                <div class="pc_search_bar">
+                    <input type="search" id="pc_search_input_panier" name="search" placeholder="Rechercher un film, une série, un artiste..." aria-label="Rechercher du contenu">
+                </div>
+                
+                <!-- Icônes Profil et Panier -->
+                <div class="pc_header_icons">
+                    <a href="#" class="pc_icon_link" aria-label="Mon profil">
+                        <span class="pc_icon pc_icon_user">👤</span>
+                    </a>
+                    <a href="panier.html" class="pc_icon_link pc_icon_active" aria-label="Mon panier" aria-current="page">
+                        <span class="pc_icon pc_icon_cart">🛒</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ZONE CENTRALE - 2 COLONNES (65% + 35%) -->
+        <div class="pc_cart_content">
+            
+            <!-- COLONNE GAUCHE : LISTE DES ARTICLES (65%) -->
+            <div class="pc_cart_left">
+                
+                <h1 class="pc_page_title">Mon Panier</h1>
+
+                <div class="pc_cart_items">
+                    
+                    <!-- Article 1 : Matrix -->
+                    <article class="pc_cart_item">
+                        <img src="img/matrix.jpg" alt="Affiche du film Matrix" class="pc_cart_item_image">
+                        <div class="pc_cart_item_info">
+                            <h2 class="pc_cart_item_title">Matrix</h2>
+                            <p class="pc_cart_item_meta">Vol. 1 • Streaming</p>
+                            <p class="pc_cart_item_description">Neo découvre que la réalité n'est qu'une simulation créée par des machines intelligentes.</p>
+                        </div>
+                        <div class="pc_cart_item_actions">
+                            <label for="qty_matrix" class="pc_cart_label">Quantité :</label>
+                            <input type="number" id="qty_matrix" name="quantity" value="1" min="1" max="10" class="pc_cart_quantity" aria-label="Quantité pour Matrix">
+                            <p class="pc_cart_item_price">12.99€</p>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 : Pulp Fiction -->
+                    <article class="pc_cart_item">
+                        <img src="img/pulp_fiction.jpg" alt="Affiche du film Pulp Fiction" class="pc_cart_item_image">
+                        <div class="pc_cart_item_info">
+                            <h2 class="pc_cart_item_title">Pulp Fiction</h2>
+                            <p class="pc_cart_item_meta">Vol. 1 • Livraison</p>
+                            <p class="pc_cart_item_description">Récits croisés de criminels dans le Los Angeles underground. Chef-d'œuvre culte de Tarantino.</p>
+                        </div>
+                        <div class="pc_cart_item_actions">
+                            <label for="qty_pulp" class="pc_cart_label">Quantité :</label>
+                            <input type="number" id="qty_pulp" name="quantity" value="2" min="1" max="10" class="pc_cart_quantity" aria-label="Quantité pour Pulp Fiction">
+                            <p class="pc_cart_item_price">29.98€</p>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 : Blade Runner -->
+                    <article class="pc_cart_item">
+                        <img src="img/blade_runner.jpg" alt="Affiche du film Blade Runner" class="pc_cart_item_image">
+                        <div class="pc_cart_item_info">
+                            <h2 class="pc_cart_item_title">Blade Runner</h2>
+                            <p class="pc_cart_item_meta">Vol. 1 • Streaming</p>
+                            <p class="pc_cart_item_description">Dans un Los Angeles dystopique, un blade runner traque des réplicants. Film culte de science-fiction.</p>
+                        </div>
+                        <div class="pc_cart_item_actions">
+                            <label for="qty_blade" class="pc_cart_label">Quantité :</label>
+                            <input type="number" id="qty_blade" name="quantity" value="1" min="1" max="10" class="pc_cart_quantity" aria-label="Quantité pour Blade Runner">
+                            <p class="pc_cart_item_price">15.99€</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Bouton continuer les achats -->
+                <div class="pc_cart_continue">
+                    <a href="index.html" class="pc_btn pc_btn_secondary">← Continuer mes achats</a>
+                </div>
+
+            </div>
+
+            <!-- COLONNE DROITE : RÉCAPITULATIF (35%) -->
+            <aside class="pc_cart_right">
+                
+                <div class="pc_cart_summary">
+                    
+                    <h2 class="pc_summary_title">Récapitulatif</h2>
+
+                    <!-- Sous-total -->
+                    <div class="pc_summary_line">
+                        <span class="pc_summary_label">Sous-total</span>
+                        <span class="pc_summary_value">58.96€</span>
+                    </div>
+
+                    <!-- Frais de livraison -->
+                    <div class="pc_summary_line">
+                        <span class="pc_summary_label">Frais de livraison</span>
+                        <span class="pc_summary_value">4.99€</span>
+                    </div>
+
+                    <!-- Code promo -->
+                    <div class="pc_summary_promo">
+                        <label for="promo_code" class="pc_promo_label">Code promo</label>
+                        <input type="text" id="promo_code" name="promo" placeholder="Entrez votre code" class="pc_promo_input" aria-label="Entrez votre code promo">
+                    </div>
+
+                    <!-- Total TTC -->
+                    <div class="pc_summary_line pc_summary_total">
+                        <span class="pc_summary_label">Total TTC</span>
+                        <span class="pc_summary_value pc_total_price">63.95€</span>
+                    </div>
+
+                    <!-- Bouton de validation -->
+                    <button type="button" class="pc_btn pc_btn_primary">Valider ma commande</button>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- FOOTER PC -->
+        <footer class="pc_footer">
+            <p class="pc_footer_copyright">© 2026 19'S - Tous droits réservés</p>
+            <nav class="pc_footer_links">
+                <a href="#" class="pc_footer_link">Contact</a>
+                <a href="#" class="pc_footer_link">À propos</a>
+                <a href="#" class="pc_footer_link">Mentions légales</a>
+                <a href="#" class="pc_footer_link">Confidentialité</a>
+            </nav>
+        </footer>
+
+    </div>
+
+    <!-- ========================================
+         VERSION MOBILE - PAGE PANIER
+    ======================================== -->
+    <div class="m_version">
+        
+        <!-- HEADER MOBILE FIXE -->
+        <header class="m_header">
+            <div class="m_header_container">
+                <!-- Logo cliquable -->
+                <div class="m_logo">
+                    <a href="index.html" aria-label="Retour à l'accueil">
+                        <img src="img/logo.jpg" alt="Logo 19'S - Plateforme de streaming vintage">
+                    </a>
+                </div>
+                
+                <div class="m_search_bar">
+                    <input type="search" id="m_search_input_panier" name="search" placeholder="Rechercher un film..." aria-label="Rechercher un film">
+                </div>
+                
+                <div class="m_header_icons">
+                    <a href="#" class="m_icon_link" aria-label="Mon profil">
+                        <span class="m_icon m_icon_user">👤</span>
+                    </a>
+                    <a href="panier.html" class="m_icon_link m_icon_active" aria-label="Mon panier" aria-current="page">
+                        <span class="m_icon m_icon_cart">🛒</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ZONE CENTRALE SCROLLABLE -->
+        <div class="m_main_content m_cart_page">
+            
+            <h1 class="m_page_title">Mon Panier</h1>
+
+            <!-- LISTE DES ARTICLES -->
+            <div class="m_cart_items">
+                
+                <!-- Article 1 : Matrix -->
+                <article class="m_cart_item">
+                    <div class="m_cart_item_info">
+                        <h2 class="m_cart_item_title">Matrix</h2>
+                        <p class="m_cart_item_meta">Vol. 1 • Streaming</p>
+                    </div>
+                    <div class="m_cart_item_details">
+                        <div>
+                            <label for="m_qty_matrix" class="m_cart_label">Qté :</label>
+                            <input type="number" id="m_qty_matrix" name="quantity" value="1" min="1" max="10" class="m_cart_quantity" aria-label="Quantité pour Matrix">
+                        </div>
+                        <p class="m_cart_item_price">12.99€</p>
+                    </div>
+                </article>
+
+                <!-- Article 2 : Pulp Fiction -->
+                <article class="m_cart_item">
+                    <div class="m_cart_item_info">
+                        <h2 class="m_cart_item_title">Pulp Fiction</h2>
+                        <p class="m_cart_item_meta">Vol. 1 • Livraison</p>
+                    </div>
+                    <div class="m_cart_item_details">
+                        <div>
+                            <label for="m_qty_pulp" class="m_cart_label">Qté :</label>
+                            <input type="number" id="m_qty_pulp" name="quantity" value="2" min="1" max="10" class="m_cart_quantity" aria-label="Quantité pour Pulp Fiction">
+                        </div>
+                        <p class="m_cart_item_price">29.98€</p>
+                    </div>
+                </article>
+
+                <!-- Article 3 : Blade Runner -->
+                <article class="m_cart_item">
+                    <div class="m_cart_item_info">
+                        <h2 class="m_cart_item_title">Blade Runner</h2>
+                        <p class="m_cart_item_meta">Vol. 1 • Streaming</p>
+                    </div>
+                    <div class="m_cart_item_details">
+                        <div>
+                            <label for="m_qty_blade" class="m_cart_label">Qté :</label>
+                            <input type="number" id="m_qty_blade" name="quantity" value="1" min="1" max="10" class="m_cart_quantity" aria-label="Quantité pour Blade Runner">
+                        </div>
+                        <p class="m_cart_item_price">15.99€</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- BLOC RÉCAPITULATIF -->
+            <aside class="m_cart_summary">
+                
+                <h2 class="m_summary_title">Récapitulatif</h2>
+
+                <!-- Sous-total -->
+                <div class="m_summary_line">
+                    <span class="m_summary_label">Sous-total</span>
+                    <span class="m_summary_value">58.96€</span>
+                </div>
+
+                <!-- Frais de livraison -->
+                <div class="m_summary_line">
+                    <span class="m_summary_label">Frais de livraison</span>
+                    <span class="m_summary_value">4.99€</span>
+                </div>
+
+                <!-- Code promo -->
+                <div class="m_summary_promo">
+                    <label for="m_promo_code" class="m_promo_label">Code promo</label>
+                    <input type="text" id="m_promo_code" name="promo" placeholder="Entrez votre code" class="m_promo_input" aria-label="Entrez votre code promo">
+                </div>
+
+                <!-- Total TTC -->
+                <div class="m_summary_line m_summary_total">
+                    <span class="m_summary_label">Total TTC</span>
+                    <span class="m_summary_value m_total_price">63.95€</span>
+                </div>
+
+            </aside>
+
+            <!-- BOUTONS D'ACTION -->
+            <div class="m_cart_actions">
+                <button type="button" class="m_btn m_btn_primary">Valider ma commande</button>
+                <a href="index.html" class="m_btn m_btn_secondary">← Continuer mes achats</a>
+            </div>
+
+            <!-- FOOTER MOBILE -->
+            <footer class="m_footer">
+                <p class="m_footer_copyright">© 2026 19'S - Tous droits réservés</p>
+                <nav class="m_footer_links">
+                    <a href="#" class="m_footer_link">Contact</a>
+                    <a href="#" class="m_footer_link">À propos</a>
+                    <a href="#" class="m_footer_link">Mentions légales</a>
+                    <a href="#" class="m_footer_link">Confidentialité</a>
+                </nav>
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
