@@ -817,7 +817,7 @@ body {
 
     .m_tabs_nav {
         position: fixed;
-        top: 74px;
+        top: 84px;
         left: 0;
         width: 100%;
         background-color: #1a1a1a;
@@ -856,7 +856,7 @@ body {
 
     .m_filters_bar {
         position: fixed;
-        top: 122px;
+        top: 158px;
         left: 0;
         width: 100%;
         background-color: #0d0d0d;
@@ -913,10 +913,10 @@ body {
 
     .m_main_content {
         position: fixed;
-        top: 172px;
+        top: 208px;
         left: 0;
         width: 100%;
-        height: calc(100vh - 172px - 60px);
+        height: calc(100vh - 208px - 60px);
         overflow-y: auto;
         overflow-x: hidden;
         padding: 20px 16px 80px 16px;
@@ -1026,8 +1026,8 @@ body {
     ======================================== */
 
     .m_cart_page {
-        top: 74px;
-        height: calc(100vh - 74px - 60px);
+        top: 84px;
+        height: calc(100vh - 84px - 60px);
     }
 
     .m_page_title {
